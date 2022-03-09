@@ -19,16 +19,88 @@ body {
 }
 
 nav {
+  img {
+    width: 50%;
+    max-width: 200px;
+  }
+
   margin-bottom: rem(60);
 }
 
 .container {
-  padding: rem(40) rem(80);
   color: white;
-  display: flex;
-  flex-direction: column;
+  padding: rem(40);
+
+  @include breakpoint(large) {
+  }
 }
 
 main {
-  display: flex;
+  flex: 1;
+  img {
+    width: 100%;
+  }
+
+  @include breakpoint(large) {
+    display: flex;
+  }
+}
+
+.hero__image {
+  margin-bottom: rem(60);
+
+  @include breakpoint(large) {
+    flex: 1;
+    align-self: center;
+  }
+}
+
+.hero__description {
+  text-align: center;
+
+  @include breakpoint(large) {
+    flex: 1;
+    text-align: left;
+    padding: rem(50) rem(50) 0 rem(50);
+  }
+
+  h1 {
+    font-size: rem(25);
+
+    @include breakpoint(large) {
+      font-size: rem(40);
+      //padding-right: rem(90);
+      max-width: 22ch;
+    }
+  }
+
+  p {
+    font-family: var(--fontSecondary);
+    font-size: rem(16);
+    line-height: 1.5;
+    margin-bottom: rem(30);
+
+    @include breakpoint(large) {
+      font-size: rem(16);
+    }
+  }
+
+  button {
+    font-family: var(--fontSecondary);
+    font-size: rem(16);
+    background-color: white;
+    color: var(--violet);
+    padding: rem(20) rem(80);
+    border-radius: rem(30);
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: var(--softMagenta);
+      color: white;
+      cursor: pointer;
+    }
+  }
 }
