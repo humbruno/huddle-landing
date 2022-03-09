@@ -1,0 +1,23 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: rem(16);
+}
+:root {
+  --fontPrimary: "Poppins", sans-serif; // weights 400 600
+  --fontSecondary: "Open Sans", sans-serif; // weight 600
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

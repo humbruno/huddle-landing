@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: rem(16);
+}
+
+:root {
+  --fontPrimary: "Poppins", sans-serif;
+  --fontSecondary: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--fontPrimary);
+  background: url("../images/bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--violet);
+  background-blend-mode: screen;
+}
+@media (max-width: 39.9375em) {
+  body {
+    background: url("../images/bg-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    background-blend-mode: screen;
+  }
+}
+
+nav {
+  margin-bottom: 3.75rem;
+}
+
+.container {
+  padding: 2.5rem 5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+}
