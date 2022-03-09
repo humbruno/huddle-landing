@@ -72,7 +72,7 @@ nav img {
 
 .container {
   color: white;
-  padding: 2.5rem;
+  padding: 1.5625rem 2.5rem;
 }
 main {
   flex: 1;
@@ -112,7 +112,7 @@ main img {
 @media (min-width: 64em) {
   .hero__description h1 {
     font-size: 2.5rem;
-    max-width: 22ch;
+    max-width: 20ch;
   }
 }
 .hero__description p {
@@ -127,7 +127,7 @@ main img {
   }
 }
 .hero__description button {
-  font-family: var(--fontSecondary);
+  font-family: var(--fontPrimary);
   font-size: 1rem;
   background-color: white;
   color: var(--violet);
@@ -141,4 +141,27 @@ main img {
   background-color: var(--softMagenta);
   color: white;
   cursor: pointer;
+}
+
+footer {
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 64em) {
+  footer {
+    justify-content: end;
+  }
+}
+footer i {
+  border: 1px solid white;
+  padding: 1.25rem 0.875rem;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+  margin: 0 0.3125rem;
+}
+footer i:hover {
+  cursor: pointer;
+  color: var(--softMagenta);
+  border: 1px solid var(--softMagenta);
 }

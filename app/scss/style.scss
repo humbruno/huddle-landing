@@ -29,7 +29,7 @@ nav {
 
 .container {
   color: white;
-  padding: rem(40);
+  padding: rem(25) rem(40);
 
   @include breakpoint(large) {
   }
@@ -70,7 +70,7 @@ main {
     @include breakpoint(large) {
       font-size: rem(40);
       //padding-right: rem(90);
-      max-width: 22ch;
+      max-width: 20ch;
     }
   }
 
@@ -86,7 +86,7 @@ main {
   }
 
   button {
-    font-family: var(--fontSecondary);
+    font-family: var(--fontPrimary);
     font-size: rem(16);
     background-color: white;
     color: var(--violet);
@@ -101,6 +101,30 @@ main {
       background-color: var(--softMagenta);
       color: white;
       cursor: pointer;
+    }
+  }
+}
+
+footer {
+  margin-top: rem(50);
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint(large) {
+    justify-content: end;
+  }
+
+  i {
+    border: 1px solid white;
+    padding: rem(20) rem(14);
+    border-radius: 50%;
+    transition: all 150ms ease-in-out;
+    margin: 0 rem(5);
+
+    &:hover {
+      cursor: pointer;
+      color: var(--softMagenta);
+      border: 1px solid var(--softMagenta);
     }
   }
 }
